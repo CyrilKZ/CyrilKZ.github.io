@@ -1,7 +1,7 @@
 .main-body{
     /* max-width: 1044px; */
     width: 100%;
-    
+    background-color: white;
     flex-direction: column;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
