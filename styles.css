@@ -6,6 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-wrap: break-word;
     min-width: 720px;
+    overflow: visible;
 }
 
 .top-bar{
@@ -192,6 +193,7 @@
 
 .intro-layout{
     max-width: 1000px;
+    min-width: 720px;
     width: 100%;
     height: 660px;
     margin: auto;
@@ -203,7 +205,8 @@
     /* background-image: url("./src/absolution.jpg");
     background-size: cover;
     background-attachment: fixed; */
-    overflow: hidden;
+    color: azure;
+    font-size: 20px;
     
     
 }
@@ -222,6 +225,8 @@
     border-right-color: darkgray;
     z-index: 1;
     overflow: hidden;
+    display: flex;
+    
     /* filter: blur(4px); */
 }
 .intro-part1::before{
@@ -232,7 +237,7 @@
     bottom: 0;
     left: 0;
     
-    background-image: url("./src/absolution.jpg");
+    background-image: url("./src/gate.jpg");
     background-size: cover;
     background-attachment: fixed;
     
@@ -255,7 +260,7 @@
     border-right-color: darkgray;
     z-index: 1;
     overflow: hidden;
-    /* filter: blur(4px);  */
+    display: flex;
 }
 .intro-part2::before{
     content: '';
@@ -265,11 +270,12 @@
     bottom: 0;
     left: 0;
     
-    background-image: url("./src/absolution.jpg");
+    background-image: url("./src/gate.jpg");
     background-size: cover;
     background-attachment: fixed;
     
     z-index:-1;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     margin: -5px;
     
@@ -287,6 +293,7 @@
     border-right-width: 1px;
     border-right-color: darkgray;
     z-index: 1;
+    display: flex;
     overflow: hidden;
 }
 .intro-part3::before{
@@ -297,10 +304,60 @@
     bottom: 0;
     left: 0;
     
-    background-image: url("./src/absolution.jpg");
+    background-image: url("./src/gate.jpg");
     background-size: cover;
     background-attachment: fixed;
     z-index:-1;
     filter: blur(5px);
     margin: -5px;
+}
+
+.intro-info2{
+    margin:auto;
+    font-weight: 400;
+    text-align: center; 
+}
+
+.intro-info1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+.realme-pic{
+    position: relative;
+    margin: auto;
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: azure;
+}
+.intro-info3{
+    margin:auto;
+    font-weight: 400;
+    text-align: center; 
+}
+.contact-link{
+    color: azure;
+}
+.contact-link:link{
+    color: azure;
+    text-decoration: none;
+}
+.contact-link:visited{
+    color: azure;
+    text-decoration: none;
+}
+.contact-link:hover{
+    color: azure;
+    text-decoration: none;
+}
+.contact-link:active{
+    color: #363433;
+    text-decoration: none;
 }
