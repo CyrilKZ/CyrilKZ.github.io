@@ -526,15 +526,13 @@
 }
 .article-main{
     max-width: 1000px;
-    width: 100%;
-    min-width: 720px;
+    width: 90%;
     min-height: 720px;
     word-wrap: break-word;
     color: black;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
-    position: relative;
     margin: auto;
-    padding: 20px;
+
 }
