@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CyrilKZ@THU-article</title>
+        <link rel="stylesheet" href="..\styles.css">
+        <meta charset="UTF-8">
+    </head>
+    <body class="main-body">
+        <header class="top-bar">
+            <div class="top-bar-left">CyrilKZ@THU</div>
+            <div class="top-bar-right">
+                <a class="top-bar-link" href="0-timeline.html">时间轴</a>
+                <a class="top-bar-link" href="0-personal-intro.html">关于我</a>
+            </div>
+        </header>
+        <div class = "article-main">
+          <h2>表达式求值问题</h2>
+          <p>by tht17 @ THU</p>
+          <p>&nbsp;</p>
+          <h3>题目要求</h3>
+          <p>给定一个二元运算的定义&amp;，求表达式的值。其中表达式满足以下规则：</p>
+          <ul>
+          <li>语法为S-&gt;A&amp;A，A-&gt;(A&amp;A)|整数；</li>
+          <li>运算顺序为由内层括号运算至外层括号，无括号时从左到右。</li>
+          
+          </ul>
+          <h3>JavaScript算法实现</h3>
+          <h4>从c语言借鉴而来：利用栈结构与后缀式</h4>
+          <p>在之前数据结构课程的学习中，我们学过利用栈结构对加减乘除运算表达式进行求值的算法。该算法利用栈结构生成后缀表达式，并用后缀式来进行最后的求值。本题目中，因为只涉及一种运算，实际上实现难度要低于加减乘除四种运算。</p>
+          <p>生成后缀表达式的流程如下：</p>
+          <ul>
+          <li>顺序读输入串，遇到的数字直接进入后缀式，遇到的左括号入栈；</li>
+          <li>遇到操作符时，如果栈顶为操作符，则将栈顶操作符出栈，向后缀式中添加操作符，将读入的操作符入栈（实际上可以等效为这种情况下直接将操作符添加至后缀式尾），如果栈顶不为操作符则直接入栈；</li>
+          <li>遇到右括号时，将栈内的元素逐个出栈并按照出栈顺序加入后缀式中，知道遇到栈内的左括号，将左括号出栈；</li>
+          <li>循环以上过程，直到整个表达式被读完。</li>
+          
+          </ul>
+          <p>后缀表达式在JavaScript中可以用数组来存储，在建立表达式时即将数字字符串用parseInt()方法转化为整数。在得到完整的后缀式后，从左往右读取，将数字-数字-操作符三元组替换为运算结果数字，直到后缀式只剩下一个数字。该数字即为最终结果。</p>
+          <h4>利用JavaScript的特性：正则表达式</h4>
+          <p>上述方法除了利用到JavaScript语言弱类型的特点和自带的parseInt()函数以外，不能很好的利用JavaScript本身的优点。实际上，JavaScript支持正则表达式，且String类支持基于正则表达式的一系列操作，包括查找符合正则表达式的子串、子串位置、替换等等。</p>
+          <p>那么由此可以得到一个直接在计算式内部进行逐层替换的算法，流程如下：</p>
+          <ul>
+          <li>首先得到“数字-操作符-数字”模式的正则表达式&quot;/-?\d+&amp;-?\d+/&quot;，式子中“-?”代表该数字前可以有负号，\d+代表多余一个数字字符。该表达式不接受含括号的表达式，因此查找时能直接定位到能直接计算的括号内的第一个表达式。</li>
+          <li>查找到第一个式子后，将其替换为计算结果，此时数字仍然由字符串表示。此时可能会出现&quot;括号-数字-括号&quot;的情况，只需查找正则表达式&quot;/\(-?\d+\)/&quot;并将其替换为其中的数字即可。</li>
+          <li>重复以上过程，直到找不到任何操作符&amp;，得到的结果就是最后结果。</li>
+          
+          </ul>
+          <h4>两种算法的比较</h4>
+          <p>计算后缀式的方法时间复杂度为Theta(|w|)，因为实际上它只进行了对字符串的两次读取，但是它写起来较为复杂，且没有很好利用JavaScript语言的特性。</p>
+          <p>正则表达式方法时间复杂度为O(|w|n)，其中n为操作符数，这是因为它进行了n次串内查找，但是这个方法“很JavaScript”，写起来比较方便。</p> 
+        </div>
+
+        <footer class="foot-bar">
+            <div class="foot-note-middle">
+                <p>这个位置留给还不存在的赞助商</p>
+                <p>请不要将该页面缩放成奇怪的形状</p>
+                <p>Hosted by Github Pages</p>
+                <p>Copyright ©2019 CyrilKZ</p>
+            </div>
+        </footer>
+    </body>   
+</html>

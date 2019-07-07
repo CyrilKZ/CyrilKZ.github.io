@@ -551,27 +551,27 @@
     color: white;
     text-decoration: none;
 }
-.article-title1{
+h1{
     color: #363433;
     font-size: 32px;
     font-weight: 600;
     margin-top: 10px;
 }
-.article-title2{
-    color: #e0d3cc;
+h2{
+    color: #363433;
     font-size: 28px;
     font-weight: 600;
     margin-top: 6px;
 }
-.article-title3{
+h3{
     color: #363433;
     font-size: 24px;
     font-weight: 600;
     margin-top: 2px;
 }
-.article-title4{
+h4{
     color: #363433;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .article-main{
