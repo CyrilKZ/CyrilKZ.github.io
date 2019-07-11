@@ -103,15 +103,17 @@
     grid-row: auto;
 }
 
-.flag-pic{
-    margin-top: 20px;
+.flag-pic{    
     margin:auto;
-    max-width: 720px;
+    margin-top: 20px;
+    max-width: 1000px;
+    min-width: 720px;
     width: auto;
 }
 #pic1{
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .sub-container{
@@ -231,8 +233,6 @@
     z-index: 1;
     overflow: hidden;
     display: flex;
-    
-    /* filter: blur(4px); */
 }
 .intro-part1::before{
     content: '';
@@ -313,6 +313,7 @@
     background-size: cover;
     background-attachment: fixed;
     z-index:-1;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     margin: -5px;
 }
@@ -474,6 +475,7 @@
     background-size: cover;
     background-attachment: fixed;
     z-index:-1;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     margin: -5px;
 }
