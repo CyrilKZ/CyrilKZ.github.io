@@ -1,0 +1,23 @@
+{
+  "name": "ht Tan",
+  "location": "清华大学软件学院",
+  "contact": [
+    {
+      "title": "github",
+      "display": "Github",
+      "content": "https://github.com/CyrilKZ"
+    }, {
+      "title": "email",
+      "display": "thu17tht@163.com",
+      "content": ""
+    }
+  ],
+  "bio": "21th Century Breakdown!",
+  "detailed": [
+    {
+      "title": "I Code with",
+      "type": "tag",
+      "content": ["JavaScript", "Vue", "Python", "C/C++"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "total": 2,
+  "all": [
+    {
+      "valid": false
+    }, {
+      "valid": true,
+      "title": "HelloWorld",
+      "subTitle": "The first test text",
+      "dateTime": "2020-01-28 15:46",
+      "keywords": ["Test", "Hello World"]
+    }, {
+      "valid": true,
+      "index": 2,
+      "title": "HelloWorld2",
+      "subTitle": "The second test text",
+      "dateTime": "2020-01-28 20:41",
+      "keywords": ["Test", "Hello World", "2"]
+    }
+  ],
+  "featured": [1, 2],
+  "category": [
+    {
+      "name": "Category1",
+      "include": [1, 2]
+    }, {
+      "name": "Category2",
+      "include": [1]
+    }
+  ]
+}
