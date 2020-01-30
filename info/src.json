@@ -1,6 +1,6 @@
 {
   "banner": {
-    "url": "https://cloud.tsinghua.edu.cn/seafhttp/files/2f97071e-b568-48a0-af50-9081111225b8/banner.jpg",
+    "url": "./img/banner.jpg",
     "title": "这是一个整活Banner",
     "subtitle": "用于文件测试"
   }
