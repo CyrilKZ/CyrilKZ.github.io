@@ -5,27 +5,44 @@
       "valid": false
     }, {
       "valid": true,
+      "index": 1,
       "title": "HelloWorld",
       "subTitle": "The first test text",
       "dateTime": "2020-01-28 15:46",
-      "keywords": ["Test", "Hello World"]
+      "keywords": ["Test", "Hello World"],
+      "color": "red",
+      "category": "Category1",
+      "related": [2, 3]
     }, {
       "valid": true,
       "index": 2,
       "title": "HelloWorld2",
       "subTitle": "The second test text",
       "dateTime": "2020-01-28 20:41",
-      "keywords": ["Test", "Hello World", "2"]
+      "keywords": ["Test", "Hello World", "2"],
+      "color": "light-green",
+      "category": "Category2",
+      "related": [1]
+    }, {
+      "valid": true,
+      "index": 3,
+      "title": "HelloWorld3",
+      "subTitle": "The third test text",
+      "dateTime": "2020-02-04 21:48",
+      "keywords": ["Test", "Hello World", "3"],
+      "color": "orange",
+      "category": "Category2",
+      "related": [1]
     }
   ],
-  "featured": [1, 2],
+  "featured": [1, 2, 3],
   "category": [
     {
       "name": "Category1",
-      "include": [1, 2]
+      "include": [1]
     }, {
       "name": "Category2",
-      "include": [1]
+      "include": [2, 3]
     }
   ]
 }
