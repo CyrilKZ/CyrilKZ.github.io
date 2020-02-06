@@ -40,9 +40,6 @@
     {
       "name": "web前端",
       "include": [1, 2, 3]
-    }, {
-      "name": "Category2",
-      "include": []
     }
   ]
 }

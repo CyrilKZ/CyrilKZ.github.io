@@ -94,3 +94,8 @@ let node = createElement(
 )
 ```
 
+## 使用Vuetify
+
+[Vuetify](https://vuetifyjs.com/zh-Hans)是一个非常好用的前端UI库，它的一大亮点是能够比较轻松地完成对不同屏幕的适配。本站所有UI组件几乎都是Vuetify组件的常见用法，在此不做进一步展开。
+
+如果使用Vue-cli，那么在项目中引入Vuetify是非常简单的，Vuetify官网上也有非常详细的介绍。
