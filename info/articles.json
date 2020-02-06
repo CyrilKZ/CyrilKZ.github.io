@@ -6,43 +6,43 @@
     }, {
       "valid": true,
       "index": 1,
-      "title": "HelloWorld",
-      "subTitle": "The first test text",
-      "dateTime": "2020-01-28 15:46",
-      "keywords": ["Test", "Hello World"],
-      "color": "red",
-      "category": "Category1",
+      "title": "基于CodeMirror构建Vue单文件组件",
+      "subTitle": "介绍CodeMirror的基本原理，根据此原理构建Vue单文件组件（支持双向绑定和动态模块引入）",
+      "dateTime": "2020-02-06 0:33",
+      "keywords": ["CodeMirror", "Vue"],
+      "color": "light-green",
+      "category": "web前端",
       "related": [2, 3]
     }, {
       "valid": true,
       "index": 2,
-      "title": "HelloWorld2",
-      "subTitle": "The second test text",
-      "dateTime": "2020-01-28 20:41",
-      "keywords": ["Test", "Hello World", "2"],
+      "title": "在Vue组件中解析渲染markdown文档",
+      "subTitle": "利用Markdown-it生成.md文档的语法token流，利用token流递归生成并遍历抽象语法树，并调用Vue的渲染函数递归生成节点",
+      "dateTime": "2020-02-06 19:15",
+      "keywords": ["Markdwon", "Markdown-it", "Vue"],
       "color": "light-green",
-      "category": "Category2",
-      "related": [1]
+      "category": "web前端",
+      "related": [1, 3]
     }, {
       "valid": true,
       "index": 3,
-      "title": "HelloWorld3",
-      "subTitle": "The third test text",
-      "dateTime": "2020-02-04 21:48",
-      "keywords": ["Test", "Hello World", "3"],
-      "color": "orange",
-      "category": "Category2",
-      "related": [1]
+      "title": "这个网站是如何建成的：使用Vuetify建立个人主页",
+      "subTitle": "把之前两篇文章中自造的组件投入应用，使用Vue-cli3+Vuetify快速建立Material Design风格的站点，动态加载博客配置文件和Markdown格式的文章",
+      "dateTime": "2020-02-06 21:48",
+      "keywords": ["Vuetify", "Vue-cli3", "个人主页"],
+      "color": "blue",
+      "category": "web前端",
+      "related": [1, 2]
     }
   ],
   "featured": [1, 2, 3],
   "category": [
     {
-      "name": "Category1",
-      "include": [1]
+      "name": "web前端",
+      "include": [1, 2, 3]
     }, {
       "name": "Category2",
-      "include": [2, 3]
+      "include": []
     }
   ]
 }
