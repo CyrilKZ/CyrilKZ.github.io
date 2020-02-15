@@ -8,7 +8,7 @@
       "index": 1,
       "title": "基于CodeMirror构建Vue单文件组件",
       "subTitle": "介绍CodeMirror的基本原理，根据此原理构建Vue单文件组件（支持双向绑定和动态模块引入）",
-      "dateTime": "2020-02-06 0:33",
+      "dateTime": "2020-02-06 00:33",
       "keywords": ["CodeMirror", "Vue"],
       "color": "light-green",
       "category": "web前端",
@@ -33,6 +33,16 @@
       "color": "blue",
       "category": "web前端",
       "related": [1, 2]
+    }, {
+      "valid": true,
+      "index": 4,
+      "title": "[CSGO对战平台搭建 | 0]从0开始的工作",
+      "subTitle": "从安装Linux服务器系统开始搭建一个CSGO的对战平台，利用了Valve提供的CSGO服务端、来自Steam开发者社区的SourceMod/MetaMod插件开发工具链和Python3+Django",
+      "dateTime": "2020-02-16 02:38",
+      "keywords": ["Python/Django", "游戏对战平台", "CS:GO"],
+      "color": "orange",
+      "category": "后端与数据库",
+      "related": []
     }
   ],
   "featured": [1, 2, 3],
@@ -40,6 +50,9 @@
     {
       "name": "web前端",
       "include": [1, 2, 3]
+    }, {
+      "name": "后端与数据库",
+      "include": [4]
     }
   ]
 }
